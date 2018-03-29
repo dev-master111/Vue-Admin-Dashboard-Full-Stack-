@@ -22,7 +22,6 @@ module.exports = function() {
 
 			let admin = new User({
 				fullName: "Administrator",
-				email: "admin@boilerplate-app.com",
 				username: "admin",
 				password: "admin1234",
 				provider: "local",
@@ -33,7 +32,6 @@ module.exports = function() {
 
 			let test = new User({
 				fullName: "Test User",
-				email: "test@boilerplate-app.com",
 				username: "test",
 				password: "test1234",
 				provider: "local",

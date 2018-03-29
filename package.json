@@ -1,8 +1,8 @@
 {
-  "name": "vue-express-mongo-boilerplate",
+  "name": "vue-express-mongo",
   "version": "0.9.0",
-  "title": "Vue-Express-Mongo BoilerPlate",
-  "description": "Express NodeJS application server boilerplate with Mongo and VueJS",
+  "title": "Vue-Express-Mongo",
+  "description": "Express NodeJS application server with Mongo and VueJS",
   "main": "server/index.js",
   "scripts": {
     "build": "webpack --progress --colors --config build/webpack.prod.config.js",
@@ -23,12 +23,7 @@
     "typings": "typings install",
     "prepublish": "npm run snyk-protect"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:icebob/vue-express-mongo-boilerplate.git"
-  },
   "keywords": [
-    "boilerplate",
     "express",
     "mongo",
     "vue",
@@ -37,9 +32,6 @@
     "bootstrap",
     "starter"
   ],
-  "config": {
-    "dbName": "boilerplate"
-  },
   "author": "Icebob",
   "license": "MIT",
   "dependencies": {

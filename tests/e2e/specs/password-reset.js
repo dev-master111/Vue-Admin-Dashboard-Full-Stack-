@@ -42,10 +42,10 @@ describe("Test forgot page", () => {
 
 	it("should send rest email, if email is correct", (browser) => {
 		forgotPage.navigate()
-			.submit("test@boilerplate-app.com")
+			.submit("test@app.com")
 			.waitForElementPresent(".flash")
 			.assert.elementPresent("@flashInfo")
-			.assert.containsText("@flashInfo", "An email has been sent to test@boilerplate-app.com with further instructions.")
+			.assert.containsText("@flashInfo", "An email has been sent to test@app.com with further instructions.")
 			.api.pause(pauseTime)
 			.makeScreenshot();
 
@@ -55,7 +55,7 @@ describe("Test forgot page", () => {
 				console.log("Check mailbox...");
 
 				let re = /reset\/(\w+)/g;			
-				mailtrap.getTokenFromMessage("test@boilerplate-app.com", re, function(err, token, message) {
+				mailtrap.getTokenFromMessage("test@app.com", re, function(err, token, message) {
 					if (err) 
 						throw new Error(err);
 

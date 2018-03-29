@@ -8,7 +8,6 @@ let passport 		= require("passport");
 let GoogleStrategy  = require("passport-google-oauth").OAuth2Strategy;
 let User 			= require("../../../models/user");
 
-// https://console.developers.google.com/project/express-mongo-boilerplate/apiui/consent
 module.exports = function() {
 	if (config.authKeys.google.clientID && config.authKeys.google.clientSecret) {
 

@@ -107,7 +107,7 @@ describe("Test login page with passwordless", () => {
 				console.log("Check mailbox...");
 
 				let re = /passwordless\/(\w+)/g;			
-				mailtrap.getTokenFromMessage("test@boilerplate-app.com", re, function(err, token, message) {
+				mailtrap.getTokenFromMessage("test@app.com", re, function(err, token, message) {
 					if (err) 
 						throw new Error(err);
 

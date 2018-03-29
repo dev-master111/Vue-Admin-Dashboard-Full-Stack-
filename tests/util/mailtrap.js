@@ -111,12 +111,6 @@ function deleteMessage(inboxID, messageID, done) {
 	});
 }
 
-/*
-getMessages(MAILTRAP_INBOX, "test@boilerplate-app.com", function(err, body) {
-	console.error(err);
-	console.log(body);
-});
-*/
 
 module.exports = {
 	getMessages,
